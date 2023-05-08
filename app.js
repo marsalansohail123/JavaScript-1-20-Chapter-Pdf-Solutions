@@ -478,3 +478,273 @@
 //     alert("yes it is divisible by 3");
 // }
 // console.log(divisible % 3 === 0, divisible);
+
+// =========== Ques 9
+
+// var val = Number(prompt("Enter value"));
+// if (val % 2 === 0) {
+//     alert("The number is " + val + " is even.")
+// } else {
+//     alert("The number is " + val + " is odd.")
+// }
+
+// =========== Ques 10
+
+// var temp = Number(prompt("Enter the temperature"));
+// if (temp > 40) {
+//     alert("it is too hot outside");
+// } else if (temp > 30 && temp < 40) {
+//     alert("the weather today is normal");
+// } else if (temp > 20 && temp < 30) {
+//     alert("todays weather is cool");
+// } else {
+//     alert("OMG! todays weather is so cool");
+// }
+
+// =========== Ques 11
+
+// var firstNum = Number(prompt("enter First number"));
+// var secondNum = Number(prompt("enter Second number"));
+// var operator = prompt("enter the operator", "+,-,*,/,%");
+// if (operator === "*") {
+//     alert(firstNum * secondNum);
+// } else if (operator === '+') {
+//     alert(firstNum + secondNum);
+// } else if (operator === "-") {
+//     alert(firstNum - secondNum);
+// } else if (operator === "/") {
+//     alert(firstNum / secondNum);
+// } else if (operator === "%") {
+//     alert(firstNum % secondNum);
+// }
+
+// Chapter 12 - 13 (IF…ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS)
+
+// =========== Ques 1
+
+// var inputChar = prompt("Enter a character:");
+// var charCode = inputChar.charCodeAt(0);
+// if (charCode >= 48 && charCode <= 57) {
+//     alert("The input character is a number.");
+// } else if (charCode >= 65 && charCode <= 90) {
+//     alert("The input character is an uppercase letter.");
+// } else if (charCode >= 97 && charCode <= 122) {
+//     alert("The input character is a lowercase letter.");
+// } else {
+//     alert("The input character is not a number, uppercase letter, or lowercase letter.");
+// }
+
+// =========== Ques 2
+
+// var num1 = parseInt(prompt("Enter the first integer:"));
+// var num2 = parseInt(prompt("Enter the second integer:"));
+// if (num1 > num2) {
+//     alert("The larger integer is: " + num1);
+// }
+// else if (num2 > num1) {
+//     alert("The larger integer is: " + num2);
+// }
+// else {
+//     alert("Both integers are equal.");
+// }
+
+// =========== Ques 3
+
+// var num = parseInt(prompt("Enter a number:"));
+// if (num > 0) {
+//     alert("The number " + num + " is positive.");
+// }
+// else if (num < 0) {
+//     alert("The number " + num + " is negative.");
+// }
+// else {
+//     alert("The number is zero.");
+// }
+
+// =========== Ques 4
+
+// var char = prompt("Enter a character:").toLowerCase();
+// if (char.length === 1 && (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u')) {
+//     alert("The character '" + char + "' is a vowel.");
+// }
+// else {
+//     alert("The character '" + char + "' is not a vowel.");
+// }
+
+// =========== Ques 5
+
+// var correctPassword = "mypassword";
+// var userPassword = prompt("Enter your password:");
+// if (userPassword === null || userPassword === "") {
+//     alert("Please enter your password.");
+// } else if (userPassword === correctPassword) {
+//     alert("Correct! The password you entered matches the original password.");
+// } else {
+//     alert("Incorrect password.");
+// }
+
+/* =========== Ques 6 */
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//     greeting = "Good day";
+// } else {
+//     greeting = "Good evening";
+// }
+// alert(greeting)
+
+// =========== Ques 7
+
+
+// var time = parseInt(prompt("Enter time in 24-hour clock format (e.g. 1900 for 7pm):"));
+// if (isNaN(time)) {
+//     alert("Invalid input. Please enter a valid time.");
+// } else {
+//     var hours = Math.floor(time / 100);
+//     alert(hours)
+//     if (hours >= 0 && hours < 12) {
+//         alert("Good morning!");
+//     } else if (hours >= 12 && hours < 17) {
+//         alert("Good afternoon!");
+//     } else if (hours >= 17 && hours < 20) {
+//         alert("Good evening!");
+//     } else if (hours >= 20 && hours < 24) {
+//         alert("Good night!");
+//     } else {
+//         alert("Invalid time. Please enter a valid time in 24-hour clock format.");
+//     }
+// }
+
+// Chapter 14 - 16 (Arrays)
+
+// =========== Ques 1
+
+// var studentNames = [];
+// studentNames.push("John");
+// studentNames.push("Alice");
+// studentNames.unshift("Bob");
+
+// =========== Ques 2
+
+// var studentNames = new Array();
+// var studentNames = [];
+// studentNames.push("John");
+// studentNames.push("Alice");
+// studentNames.unshift("Bob");
+
+// =========== Ques 3
+
+// var arr = ["abc", "def", "ghi", "jkl"];
+
+// =========== Ques 4
+
+// var numbers = [1, 2, 3, 4, 5];
+// console.log(numbers[0]);
+// console.log(numbers[2]);
+// numbers[1] = 10;
+// console.log(numbers);
+// numbers.push(6);
+// console.log(numbers);
+// numbers.pop();
+// console.log(numbers);
+// console.log(numbers.length);
+
+// =========== Ques 5
+
+// var boolArray = [true, false, true, false];
+// console.log(boolArray[0]);
+// console.log(boolArray[1]);
+// boolArray[2] = false;
+// console.log(boolArray);
+// boolArray.push(true);
+// boolArray.pop();
+// console.log(boolArray);
+// console.log(boolArray.length);
+
+// =========== Ques 6
+
+// var mixedArray = ["John", 25, true, 3.14, false];
+// console.log(mixedArray[0]);
+// console.log(mixedArray[1]);
+// console.log(mixedArray[2]);
+// mixedArray[3] = 2.71;
+// console.log(mixedArray);
+// mixedArray.push("Alice");
+// console.log(mixedArray);
+// mixedArray.pop();
+// console.log(mixedArray);
+// console.log(mixedArray.length);
+
+// =========== Ques 7
+
+
+// var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+// document.write("<h1>Education Qualifications in Pakistan:</h1>");
+// document.write("<ul>");
+// for (var i = 0; i < qualifications.length; i++) {
+//     document.write("<li>" + qualifications[i] + "</li>");
+// }
+// document.write("</ul>");
+
+// =========== Ques 8
+
+// var studentNames = ["John", "Jane", "Alice"];
+// var studentScores = [420, 380, 450];
+// var totalMarks = 500;
+// var percentages = [];
+// for (var i = 0; i < studentScores.length; i++) {
+//     var percentage = (studentScores[i] / totalMarks) * 100;
+//     percentages.push(percentage);
+// }
+// console.log(percentages)
+// for (var i = 0; i < studentNames.length; i++) {
+//     document.write("<h3>Student: " + studentNames[i] + "</h3>");
+//     document.write("Score: " + studentScores[i] + "<br>");
+//     document.write("Percentage: " + percentages[i] + "%<br><br>");
+// }
+
+// =========== Ques 9
+
+// var colors = ["Red", "Green", "Blue"];
+// document.write("<h3>Original Array: " + colors + "</h3><br>");
+// var colorToAddAtBeginning = prompt("Enter a color to add at the beginning of the array:");
+// colors.unshift(colorToAddAtBeginning);
+// document.write("<h3>Array after adding color at the beginning: " + colors + "</h3><br>");
+// var colorToAddAtEnd = prompt("Enter a color to add at the end of the array:");
+// colors.push(colorToAddAtEnd);
+// document.write("<h3>Array after adding color at the end: " + colors + "</h3><br>");
+// colors.unshift("Yellow", "Orange");
+// document.write("<h3>Array after adding two colors at the beginning: " + colors + "</h3><br>");
+// colors.shift();
+// document.write("<h3>Array after deleting the first color: " + colors + "</h3><br>");
+// colors.pop();
+// document.write("<h3>Array after deleting the last color: " + colors + "</h3><br>");
+// var indexToAdd = prompt("Enter the index at which you want to add a color:");
+// var colorToAdd = prompt("Enter the color you want to add:");
+// colors.splice(indexToAdd, 0, colorToAdd);
+// document.write("<h3>Array after adding color at a specific index: " + colors + "</h3><br>");
+// var indexToDelete = prompt("Enter the index from which you want to delete color(s):");
+// var numColorsToDelete = prompt("Enter the number of colors you want to delete:");
+// colors.splice(indexToDelete, numColorsToDelete);
+// document.write("<h3>Array after deleting color(s) from a specific index: " + colors + "</h3><br>");
+
+// =========== Ques 10
+
+// var scores = [85, 92, 78, 95, 88, 91];
+// console.log("Original Array: " + scores);
+
+// Method 1
+// scores.sort(function (a, b) {
+// return a - b;
+// });
+// console.log("Sorted Array (Ascending Order): " + scores);
+
+// Method 2
+// console.log(scores.sort().join(","));
+
+// =========== Ques 11
+// =========== Ques 12
+// =========== Ques 13
+// =========== Ques 14
+// =========== Ques 15
